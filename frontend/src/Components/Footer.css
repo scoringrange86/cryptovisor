@@ -1,0 +1,93 @@
+.footer-wrapper {
+    display: flex;
+    grid-area: foot;
+    background-color: black;
+}
+
+.footer-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.footer-notes {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 35px;
+    margin-right: 100px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-left: 50px;
+}
+
+.footer-btn {
+    font-family: Noto Sans Tamil UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #CA851E;
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+a.footer-btn:hover {
+    color: #A26B19;
+}
+
+a.footer-btn:active {
+    color: #614010;
+}
+
+.footer-link-social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-link-social-media-icon {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+a.footer-link-social-media-icon img:nth-child(2) {
+    display: none;
+}
+
+a.footer-link-social-media-icon img:last-child {
+    display: none;
+}
+
+a.footer-link-social-media-icon:hover img:first-child {
+    display: none;
+}
+
+a.footer-link-social-media-icon:hover img:nth-child(2) {
+    display: block;
+}
+
+a.footer-link-social-media-icon:hover img:last-child {
+    display: none;
+}
+
+a.footer-link-social-media-icon:active img:first-child {
+    display: none;
+}
+
+a.footer-link-social-media-icon:active img:nth-child(2) {
+    display: none;
+}
+
+a.footer-link-social-media-icon:active img:last-child {
+    display: block;
+}
+
+h3 {
+    padding-bottom: 35px;
+}

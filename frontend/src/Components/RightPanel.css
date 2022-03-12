@@ -1,0 +1,214 @@
+.rightpanel-wrapper {
+    box-sizing: border-box; 
+    font-family: Noto Sans Tamil UI;
+    font-style: normal;
+    font-weight: normal;
+    flex-direction: column;
+    display: flex;
+    border-left: 2px solid #CA851E;
+    margin-top: 50px;
+    padding-left: 15px;
+    color: #CA851E;
+}
+
+.USDC-wrapper {
+    box-sizing: border-box; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.USDC-Articles-wrapper {
+    box-sizing: border-box; 
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Industry-News-wrapper {
+    box-sizing: border-box; 
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightpanel-title {
+    box-sizing: border-box; 
+    height: 41px;
+    left: calc(50% - 380px/2);
+    top: 0px;
+    line-height: 41px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+    color: #CA851E;
+}
+
+.article-wrapper {
+    box-sizing: border-box; 
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+.view-Count-wrapper {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    color: #CA851E;
+}
+
+.article-contents {
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.article-title {
+    box-sizing: border-box; 
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: left;
+    color: #CA851E;
+}
+
+a.article-title:hover {
+    color: #A26B19;
+}
+
+a.article-title:active {
+    color: #614010;
+}
+
+.article-signature {
+    display: flex;
+    flex-direction: row;
+    margin-top: 4px;
+    box-sizing: border-box; 
+}
+
+.article-author {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box; 
+}
+
+.article-author-by {
+    font-size: 16px;
+    line-height: 22px;
+    color: #4E463B;
+    box-sizing: border-box; 
+
+}
+
+.article-author-name {
+    font-size: 16px;
+    line-height: 22px;
+    /* color: #CA851E; */
+    margin-left: 5px;
+    box-sizing: border-box; 
+
+}
+
+.article-author-time {
+    font-size: 16px;
+    line-height: 22px;
+    color: #4E463B;
+    margin-left: 10px;
+    box-sizing: border-box; 
+
+}
+
+.article-message {
+    box-sizing: border-box; 
+    font-size: 20px;
+    line-height: 27px;
+    /* color: #CA851E; */
+    margin-top: 20px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.right-panel-btn {
+    box-sizing: border-box; 
+    font-family: Noto Serif KR;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: #CA851E;
+    text-decoration: none;
+    background: linear-gradient(142.96deg, rgba(5, 5, 5, 0.6) 15.96%, rgba(19, 19, 19, 0.8) 83.29%);
+    border: 1px solid rgba(86, 86, 86, 0.3);
+    width: 100%;
+    padding: 16px 422px;
+    border-radius: 10px;
+    margin-top: 35px;
+    margin-right: 10px;
+}
+
+button.right-panel-btn:hover {
+    border: 1px solid rgba(252, 250, 250, 0.3);
+}
+
+button.right-panel-btn:active {
+    border: 1px solid #FFFFFF;
+}
+
+@media (max-width: 1260px){
+    .rightpanel-wrapper {
+        max-width: 780px;
+    }
+}
+
+@media (max-width: 1000px){
+    .rightpanel-wrapper {
+        border-left:none; 
+        /* max-width: 700px; */
+    }
+}
+/* Get image height to give proper ration while having full width  */
+@media (max-width: 780px){
+    .article-wrapper {
+        /* max-width: 700px; */
+        flex-direction: column;
+    }
+    .article-message {
+        max-width: 650px;
+    }
+    .img-btn {
+        width: 100%;
+        height: 50%;
+        margin-left: 0;
+    }
+    .ShinyBitcoin {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .rightpanel-wrapper {
+        /* max-width: 630px; */
+    }
+
+    .article-message {
+        width: 100%;
+    }
+}
+
+/* @media (max-width: 470px){
+    .article-message {
+        display: none; 
+    }
+} */
+
+@media (max-width: 470px){
+    .article-message {
+        display: none; 
+    }
+}

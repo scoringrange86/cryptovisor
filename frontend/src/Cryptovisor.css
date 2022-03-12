@@ -1,0 +1,22 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  /* background-color: black; */
+}
+
+.App{
+text-align: center;
+font-family: Noto Sans Tamil UI;
+transition: allc .5s ease;
+background-color: black;
+
+}
+
+  .App-wrapper {
+    text-align: center;
+    font-family: Noto Sans Tamil UI;
+      max-width: 1302px;
+      margin: 0 auto;
+      color: #CA851E;
+      background-color: black;
+  }

@@ -1,0 +1,58 @@
+.contents-wrapper {
+    margin: 0 auto; 
+    color: #CA851E;
+    display: flex;
+    flex-direction: row; 
+    /* grid-template-areas: "panel main main main"; */
+}
+
+/* .wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;  
+} */
+ /* XL Devices are regular  */
+
+
+
+
+ /* Large Devices */
+@media (max-width: 1260px){
+    .contents-wrapper {
+        max-width: 950px;
+        color: red;
+
+    }
+}
+
+/* Medium devices */
+@media (max-width: 1000px){
+    .contents-wrapper {
+        max-width: 880px;
+        color: green;
+
+    }
+}
+
+/* Small Devices */
+
+@media (max-width: 768px)
+{
+    .contents-wrapper {
+        max-width: 700px;
+        color: pink;
+
+    }
+
+}
+
+ /* XS Devices */
+@media (max-width: 500px)
+{
+    .contents-wrapper {
+        max-width: 475px;
+        color: orange;
+
+    }
+
+}

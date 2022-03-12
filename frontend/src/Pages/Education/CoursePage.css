@@ -1,0 +1,40 @@
+.hero {
+    padding-top: 80px;
+    margin: auto;
+    color: #CA851E;
+
+}
+
+.header {
+   margin: auto;
+}
+
+.title {
+    padding-bottom: 95px;
+}
+
+.title-message {
+    margin-top: 50px;
+}
+
+.takeaways-wrapper {
+    font-family: Noto Sans Tamil UI;
+    font-style: normal;
+    font-weight: normal;
+    background-color: black;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    margin-bottom: 235px;
+    width: 900px;
+    margin: auto;
+}
+
+.subtitle {
+    margin-bottom: 15px;
+}
+
+.subtitle-message {
+    margin-bottom: 10px;
+}
