@@ -29,11 +29,6 @@ pageBackground: "black"
 // tagLineColor: "lavender"
 }
 
-// const themes = {
-//   light: LightTheme,
-//   dark: DarkTheme,
-// }
-
 function App() {
    const [theme, setTheme] = useState('light');
 
