@@ -1,8 +1,9 @@
 import './App.css';
 import {useState, useContext, useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {ThemeProvider} from "styled-components";
+// import {ThemeProvider} from "styled-components";
 import Cryptovisor from './Cryptovisor.js';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 // import {lightTheme, darkTheme} from './Themes/Theme.js'
 
 // const themes = {
@@ -29,18 +30,51 @@ pageBackground: "black"
 // tagLineColor: "lavender"
 }
 
+// const themes = {
+//   light: LightTheme,
+//   dark: DarkTheme,
+// }
+
+const theme = createTheme({
+ breakpoints: {
+
+  values: {
+  xs: 0,
+  sm: 600,
+  md: 900,
+  lg: 1200,
+  xl: 1536, 
+  },
+ },
+
+});
 function App() {
-   const [theme, setTheme] = useState('light');
+  //  const [theme, setTheme] = useState('light');
 
   return (
-    <Cryptovisor />
+    // <Cryptovisor />
+    // </>
   // <ThemeProvider theme={themes[theme]}>
   //   <Cryptovisor theme={theme} setTheme={setTheme}/>
   // </ThemeProvider>
 //  <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}> 
   // <div>Hello World</div>
   // </ThemeProvider>
+<ThemeProvider theme={theme}>
+  <Cryptovisor/>
+</ThemeProvider>
   );
 }
+
+// function App() {
+//   const myMediaQuery = useMediaQuery('(min-width: 1000px)');
+//   return (
+//     <div style = {{ display: 'block'}}>
+//       <h4> Real useMediaQuery Component</h4>
+//       <span> {`Is Screen at Minimum 1000px: ${myMediaQuery}`}</span>
+//     </div>
+
+//     );
+// }
 
 export default App;

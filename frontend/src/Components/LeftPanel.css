@@ -7,7 +7,7 @@
     display: flex;
     color: #CA851E;
     /* grid-area: panel; */
-    background-color: none;
+    /* background-color: none; */
     /* max-width: 30%; */
 }
 
@@ -15,7 +15,7 @@
     box-sizing: border-box; 
     margin: 0;
     max-width: 310px;
-    background-color: none;
+    /* background-color: none; */
 }
 
 .left-panel-article {

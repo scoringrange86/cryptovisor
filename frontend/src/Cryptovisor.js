@@ -2,6 +2,7 @@ import './Cryptovisor.css'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import {useState, useContext, useEffect} from 'react';
 import styled from 'styled-components';
+import { useMediaQuery } from '@mui/material';
 // dont need it ? ? ^^ 
 // Components
 import Navbar from './Components/Navbar';
@@ -77,12 +78,17 @@ function Cryptovisor() {
   //         props.setTheme("light")
   //     }
   // };
+  const myMediaQuery = useMediaQuery('(min-width: 1000px)');
   return (
 
     <Router>
       
         <div className="App">
           <div className="App-wrapper">
+          <div style = {{ display: 'block'}}>
+    <h4> Real useMediaQuery Component</h4>
+    <span> {`Is Screen at Minimum 1000px: ${myMediaQuery}`}</span>
+   </div>
           <header>
             <Navbar click={() => setSideToggle(true)} />
             <SideDrawer show={sideToggle} click={() => setSideToggle(false)} />

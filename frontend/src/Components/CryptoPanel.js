@@ -1,8 +1,41 @@
 import './CryptoPanel.css'
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react"
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery} from '@mui/material';
+// import { makeStyles } from '@mui/styles';
 
+// use usestyles to handle crypto panel data array size ?
+// makeStyles is deprecated
+// can use sx prop or styled() as a workaround ? 
 const CryptoPanel = () => {
+    // calls on the theme passed into the function, in this case we want to access the breakpoints
+    const theme = useTheme();
+
+    const useStyles = () => ({
+        arraySize: 7
+        
+        // {
+        //     size: 7,
+        //     [theme.breakpoints.up("xs")]: {
+        //         size: 3,
+        //     },
+        //     [theme.breakpoints.up("s")]: {
+        //         size: 4,
+        //     },
+        //     [theme.breakpoints.up("md")]: {
+        //         size: 5,
+        //     },
+        //     [theme.breakpoints.up("lg")]: {
+        //         size: 6,
+        //     },
+        //     [theme.breakpoints.up("xl")]: {
+        //         size: 7,
+        //     }
+        // }
+    }
+    
+    );
 
     const [coins, setCoins] = useState(
         [
@@ -21,6 +54,11 @@ const CryptoPanel = () => {
         fetch('http://localhost:5000/api/cryptoData').then(response => {
             return response.json()
         }).then((data) => {
+            // run media query 
+            // create new data array and insert number of values based on query
+            // insert data into setCoins
+            var size; 
+            console.log("Array size: ",useStyles.arraySize)
             setCoins(data);
         })
             .catch(error => console.log(error))

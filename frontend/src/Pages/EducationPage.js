@@ -31,7 +31,7 @@ function orderArticles (array) {
     const orderedArray = []
     var position = 1; 
     array.forEach(element => {
-        const article = array.find(element => element.order == position)
+        const article = array.find(element => element.order === position)
         orderedArray.push(article)
         position++; 
     });

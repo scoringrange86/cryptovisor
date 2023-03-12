@@ -4,7 +4,7 @@
     pointer-events: auto;
     position: absolute;
     top: calc(100% + 1.7rem);
-    background-color: white;
+    /* background-color: white; */
     box-shadow: 0px 1px 4px 1px rgba(202,133, 30, .3);
     overflow: hidden;
     border-radius: 2px;
